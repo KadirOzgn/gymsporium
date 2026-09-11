@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
-import { MapPin, Clock, Phone, Mail, ChevronRight, Activity, Dumbbell, ActivitySquare } from 'lucide-react';
+import { MapPin, Clock, ChevronRight, Activity, Dumbbell } from 'lucide-react';
 import logoImg from './assets/logo.png';
-import heroImg from './assets/hero.jpg';
 
 
 
@@ -110,6 +109,7 @@ const GlowCard = ({ children, className = "", style = {} }) => {
 const useScrollReveal = () => {
   const ref = useRef(null);
   useEffect(() => {
+    const node = ref.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -118,8 +118,8 @@ const useScrollReveal = () => {
       },
       { threshold: 0.1 }
     );
-    if (ref.current) observer.observe(ref.current);
-    return () => { if (ref.current) observer.disconnect(); };
+    if (node) observer.observe(node);
+    return () => { if (node) observer.disconnect(); };
   }, []);
   return ref;
 };
