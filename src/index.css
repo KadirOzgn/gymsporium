@@ -200,11 +200,45 @@ h1, h2, h3, h4 {
 }
 
 /* Responsive adjustments */
+@media (max-width: 992px) {
+  .bento-grid { grid-template-columns: 1fr !important; }
+  .editorial-grid { grid-template-columns: 1fr; gap: 30px; }
+  .editorial-text h2 { left: 0; font-size: 3rem; }
+}
+
 @media (max-width: 768px) {
-  .section-padding { padding: 80px 5%; }
-  h1 { font-size: 3.5rem !important; }
-  .bento-grid { grid-template-columns: 1fr; }
+  .section-padding { padding: 60px 5%; }
+  h1 { font-size: 2.5rem !important; line-height: 1.1 !important; }
+  h2 { font-size: 2rem !important; }
+  .bento-grid { grid-template-columns: 1fr !important; }
   .bento-item[style*="gridColumn: 'span 2'"] { grid-column: auto !important; }
+  
+  /* Navbar Mobile */
+  .nav-links-container { display: none !important; }
+  nav { padding: 15px 5% !important; }
+  
+  /* Hero Mobile */
+  .hero-content { padding-top: 60px; text-align: center; }
+  .hero-buttons { flex-direction: column; gap: 10px; width: 100%; }
+  .hero-buttons a { width: 100%; text-align: center; justify-content: center; }
+  
+  /* Sections */
+  .pricing-card { padding: 30px 20px; }
+  .popular-tag { right: -40px; font-size: 0.7rem; padding: 5px 30px; }
+  
+  /* Custom Cursor / Marquee */
+  .marquee-container { transform: rotate(0) scale(1); margin: 30px 0; }
+  .marquee-content { font-size: 1.5rem; }
+  body { cursor: auto; }
+  .cursor-dot, .cursor-ring { display: none; }
+  
+  /* BMI Calculator */
+  .bmi-input { font-size: 1.2rem; }
+  .bmi-container { padding: 25px; }
+  .bmi-result-box { font-size: 1rem; }
+  
+  /* Footer */
+  footer { flex-direction: column; text-align: center; gap: 20px; }
 }
 
 /* MacFit Killer Updates */
@@ -482,10 +516,4 @@ a, button, input, textarea, select, .pricing-card, .trainer-card, .bento-item {
   animation: fadeIn 0.5s ease;
 }
 
-@media (max-width: 768px) {
-  .editorial-grid { grid-template-columns: 1fr; }
-  .editorial-text h2 { left: 0; font-size: 3rem; }
-  .marquee-container { transform: rotate(0) scale(1); margin: 30px 0; }
-  body { cursor: auto; }
-  .cursor-dot, .cursor-ring { display: none; }
-}
+

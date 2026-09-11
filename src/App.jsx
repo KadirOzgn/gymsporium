@@ -146,7 +146,7 @@ const Navbar = () => (
       </div>
       <h2 className="text-gradient" style={{ margin: 0, fontSize: '1.8rem', fontStyle: 'italic', fontWeight: 900 }}>GYM SPORIUM</h2>
     </a>
-    <div style={{ display: 'flex', gap: '30px', alignItems: 'center' }}>
+    <div className="nav-links-container" style={{ display: 'flex', gap: '30px', alignItems: 'center' }}>
       <a href="#about" className="nav-link">Hakkımızda</a>
       <a href="#programs" className="nav-link">Programlar</a>
       <a href="#pricing" className="nav-link">Paketler</a>
@@ -243,7 +243,7 @@ const Hero = () => (
     <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(to right, rgba(5,5,5,0.98) 0%, rgba(5,5,5,0.6) 100%)', zIndex: 0 }}></div>
     <div className="hero-grid"></div>
 
-    <div className="animate-fade-in" style={{ maxWidth: '800px', marginTop: '80px', zIndex: 1, position: 'relative' }}>
+    <div className="animate-fade-in hero-content" style={{ maxWidth: '800px', marginTop: '80px', zIndex: 1, position: 'relative' }}>
       <h1 style={{ fontSize: '6rem', lineHeight: '1', marginBottom: '20px', fontStyle: 'italic', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '-2px' }}>
         LİMİTLERİ <span className="text-gradient">AŞ</span><br/>
       </h1>
@@ -253,7 +253,7 @@ const Hero = () => (
       <p style={{ fontSize: '1.2rem', marginBottom: '40px', color: '#ccc', lineHeight: '1.6', maxWidth: '600px' }}>
         Gerçek değişim burada başlar. Şehrin en iyi atmosferinde, profesyonel ekipmanlarla potansiyelini keşfet.
       </p>
-      <div style={{ display: 'flex', gap: '20px' }}>
+      <div className="hero-buttons" style={{ display: 'flex', gap: '20px' }}>
         <a href="#pricing" className="btn-primary" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           KAYIT OL <ChevronRight size={20} />
         </a>
