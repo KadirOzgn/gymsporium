@@ -266,31 +266,60 @@ const Hero = () => (
 );
 
 const About = () => (
-  <section id="about" className="section-padding" style={{ position: 'relative' }}>
-    <Reveal className="editorial-grid">
+  <section id="about" className="section-padding" style={{ position: 'relative', overflow: 'hidden' }}>
+    {/* Cinematic Background Text */}
+    <div style={{
+      position: 'absolute',
+      top: '5%',
+      left: '-5%',
+      fontSize: '12rem',
+      fontWeight: 900,
+      fontStyle: 'italic',
+      color: 'transparent',
+      WebkitTextStroke: '2px rgba(255,255,255,0.03)',
+      zIndex: 0,
+      whiteSpace: 'nowrap',
+      pointerEvents: 'none',
+      userSelect: 'none'
+    }}>
+      THE CULTURE
+    </div>
+
+    <Reveal className="editorial-grid" style={{ position: 'relative', zIndex: 1 }}>
       <div className="editorial-text">
-        <h2 style={{ fontStyle: 'italic' }}>GYM SPORIUM <br/><span className="text-gradient">FARKINI YAŞA</span></h2>
+        <h2 style={{ fontStyle: 'italic', fontSize: '4.5rem', lineHeight: '1', marginBottom: '20px' }}>
+          BİZ <span className="text-gradient">FARKLIYIZ</span>
+        </h2>
         <p style={{ color: '#ccc', fontSize: '1.2rem', lineHeight: '1.8', marginBottom: '30px' }}>
-          Biz sadece bir spor salonu değiliz; biz, İzmir'in en agresif, en motive edici fitness kültürüyüz. "Hardest Worker in the Room" felsefesini benimsedik. Kendi sınırlarınla yüzleşeceğin bu atmosferde, dünya standartlarında ekipmanlar ve ödünsüz bir disiplin seni bekliyor.
+          Burası sadece ter attığın bir yer değil; sınırlarınla yüzleştiğin bir mabet. "Hardest Worker in the Room" felsefesiyle, şehrin en agresif ve motive edici fitness kültürünü inşa ettik.
         </p>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '40px' }}>
+        <div style={{ display: 'flex', gap: '40px', marginTop: '40px', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '30px' }}>
           <div>
-            <Activity size={32} color="var(--accent)" style={{ marginBottom: '10px' }} />
-            <h4 style={{ fontSize: '1.2rem' }}>Kişisel Takip</h4>
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Birebir odak.</p>
+            <h3 style={{ fontSize: '3rem', color: 'var(--accent)', margin: '0 0 5px 0', lineHeight: '1' }}>2000+</h3>
+            <p style={{ color: 'var(--text-muted)', margin: 0, fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '2px' }}>Aktif Üye</p>
           </div>
           <div>
-            <Dumbbell size={32} color="var(--accent)" style={{ marginBottom: '10px' }} />
-            <h4 style={{ fontSize: '1.2rem' }}>Modern Ekipman</h4>
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Ergonomik makineler.</p>
+            <h3 style={{ fontSize: '3rem', color: 'var(--accent)', margin: '0 0 5px 0', lineHeight: '1' }}>50+</h3>
+            <p style={{ color: 'var(--text-muted)', margin: 0, fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '2px' }}>Uzman Antrenör</p>
           </div>
         </div>
       </div>
-      <div className="editorial-image-wrapper interactive">
-        <img src={gallery1} alt="Kişisel Eğitim" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 20px 40px rgba(0,0,0,0.8)' }} />
+      
+      {/* Overlapping Image Collage */}
+      <div style={{ position: 'relative', height: '100%', minHeight: '500px' }} className="interactive">
+        <img 
+          src={gallery1} 
+          alt="Gym Sporium Main" 
+          style={{ width: '85%', height: '450px', objectFit: 'cover', borderRadius: '12px', position: 'absolute', top: 0, right: 0, filter: 'grayscale(30%) contrast(1.2)' }} 
+        />
+        <img 
+          src={gallery13} 
+          alt="Gym Sporium Detail" 
+          style={{ width: '55%', height: '350px', objectFit: 'cover', borderRadius: '12px', position: 'absolute', bottom: 0, left: 0, border: '6px solid var(--bg)', boxShadow: '0 20px 40px rgba(0,255,204,0.1)' }} 
+        />
       </div>
     </Reveal>
-    <div style={{ marginTop: '80px' }}>
+    <div style={{ marginTop: '80px', position: 'relative', zIndex: 1 }}>
       <BMICalculator />
     </div>
   </section>
