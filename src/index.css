@@ -488,7 +488,6 @@ a, button, input, textarea, select, .pricing-card, .trainer-card, .bento-item {
   line-height: 0.9;
   margin-bottom: 30px;
   position: relative;
-  left: -40px;
   text-shadow: 0 10px 30px rgba(0,0,0,0.8);
 }
 
