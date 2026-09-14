@@ -150,7 +150,7 @@ const Navbar = () => (
       <a href="#about" className="nav-link">Hakkımızda</a>
       <a href="#programs" className="nav-link">Programlar</a>
       <a href="#pricing" className="nav-link">Paketler</a>
-      <a href="#trainers" className="nav-link">Eğitmenler</a>
+      <a href="#reviews" className="nav-link">Yorumlar</a>
       <a href="#social" className="nav-link">Instagram</a>
       <a href="#contact" className="nav-link">İletişim</a>
       <a href="#contact" className="btn-primary" style={{ padding: '10px 24px', fontSize: '0.9rem' }}>Üye Ol</a>
@@ -398,31 +398,57 @@ const Pricing = () => (
   </section>
 );
 
-const Trainers = () => (
-  <section id="trainers" className="section-padding" style={{ backgroundColor: 'var(--secondary)' }}>
+const GoogleReviews = () => (
+  <section id="reviews" className="section-padding" style={{ backgroundColor: 'var(--secondary)' }}>
     <Reveal>
-      <h2 className="section-title">Uzman <span className="text-gradient">Kadromuz</span></h2>
+      <h2 className="section-title">Gerçek Üyeler, <span className="text-gradient">Gerçek Deneyimler</span></h2>
+      <p style={{ color: '#ccc', textAlign: 'center', maxWidth: '800px', margin: '0 auto 40px', fontSize: '1.1rem', lineHeight: '1.6' }}>
+        1500m²'lik ferah çalışma alanımız, son teknoloji ekipmanlarımız ve üst düzey hijyen standartlarımızla sporu bir yaşam tarzı haline getirenlerin yorumları:
+      </p>
     </Reveal>
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px', maxWidth: '1000px', margin: '0 auto' }}>
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', maxWidth: '1200px', margin: '0 auto' }}>
       
       <Reveal delay={100}>
-        <GlowCard className="trainer-card">
-          <img src={trainer1} alt="Baş Antrenör" />
-          <div className="trainer-info">
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '5px' }}>Ahmet Yılmaz</h3>
-            <p style={{ color: 'var(--accent)', fontWeight: 'bold' }}>Baş Antrenör</p>
-            <p style={{ color: '#ccc', fontSize: '0.9rem', marginTop: '10px' }}>Vücut Geliştirme & Güç Antrenmanı</p>
+        <GlowCard className="trainer-card" style={{ padding: '30px', textAlign: 'left', display: 'block' }}>
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '15px' }}>
+            <div style={{ color: '#fbbc05', fontSize: '1.5rem', marginRight: '10px', letterSpacing: '2px' }}>★★★★★</div>
+            <span style={{ color: '#fff', fontWeight: 'bold', fontSize: '1.1rem' }}>Canan B.</span>
+          </div>
+          <p style={{ color: '#ccc', fontSize: '1rem', lineHeight: '1.6', margin: 0, fontStyle: 'italic' }}>
+            "Bölgedeki en temiz ve en geniş ekipman yelpazesine sahip salon. Özellikle sabah saatlerindeki ferah ortamı harika. Hijyene çok önem veriliyor."
+          </p>
+          <div style={{ marginTop: '20px', color: 'var(--text-muted)', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{ fontWeight: 'bold', color: '#fff', backgroundColor: '#4285F4', padding: '2px 6px', borderRadius: '4px', fontSize: '0.75rem' }}>G</span> Google Yorumu • 2 hafta önce
           </div>
         </GlowCard>
       </Reveal>
 
       <Reveal delay={200}>
-        <GlowCard className="trainer-card">
-          <img src={trainer2} alt="Kişisel Eğitmen" />
-          <div className="trainer-info">
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '5px' }}>Ayşe Demir</h3>
-            <p style={{ color: 'var(--accent)', fontWeight: 'bold' }}>Fitness Eğitmeni</p>
-            <p style={{ color: '#ccc', fontSize: '0.9rem', marginTop: '10px' }}>Spinning & Pilates Uzmanı</p>
+        <GlowCard className="trainer-card" style={{ padding: '30px', textAlign: 'left', display: 'block' }}>
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '15px' }}>
+            <div style={{ color: '#fbbc05', fontSize: '1.5rem', marginRight: '10px', letterSpacing: '2px' }}>★★★★★</div>
+            <span style={{ color: '#fff', fontWeight: 'bold', fontSize: '1.1rem' }}>Mehmet T.</span>
+          </div>
+          <p style={{ color: '#ccc', fontSize: '1rem', lineHeight: '1.6', margin: 0, fontStyle: 'italic' }}>
+            "Ekipmanlar yeni ve çeşitli. Çalışanlar çok ilgili ve içerideki atmosfer tamamen spora motive edici. Kesinlikle tavsiye ederim."
+          </p>
+          <div style={{ marginTop: '20px', color: 'var(--text-muted)', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{ fontWeight: 'bold', color: '#fff', backgroundColor: '#4285F4', padding: '2px 6px', borderRadius: '4px', fontSize: '0.75rem' }}>G</span> Google Yorumu • 1 ay önce
+          </div>
+        </GlowCard>
+      </Reveal>
+
+      <Reveal delay={300}>
+        <GlowCard className="trainer-card" style={{ padding: '30px', textAlign: 'left', display: 'block' }}>
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '15px' }}>
+            <div style={{ color: '#fbbc05', fontSize: '1.5rem', marginRight: '10px', letterSpacing: '2px' }}>★★★★★</div>
+            <span style={{ color: '#fff', fontWeight: 'bold', fontSize: '1.1rem' }}>Selin K.</span>
+          </div>
+          <p style={{ color: '#ccc', fontSize: '1rem', lineHeight: '1.6', margin: 0, fontStyle: 'italic' }}>
+            "Klima sistemi çok başarılı, havasız bir ortam yok. Makinelerin kalitesi ve salonun büyüklüğü tam aradığım gibi."
+          </p>
+          <div style={{ marginTop: '20px', color: 'var(--text-muted)', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{ fontWeight: 'bold', color: '#fff', backgroundColor: '#4285F4', padding: '2px 6px', borderRadius: '4px', fontSize: '0.75rem' }}>G</span> Google Yorumu • 3 ay önce
           </div>
         </GlowCard>
       </Reveal>
@@ -536,7 +562,7 @@ function App() {
       <About />
       <Programs />
       <Pricing />
-      <Trainers />
+      <GoogleReviews />
       <SocialInstagram />
       <Contact />
       <Footer />
