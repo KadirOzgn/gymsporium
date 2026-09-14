@@ -245,10 +245,10 @@ const Hero = () => (
 
     <div className="animate-fade-in hero-content" style={{ maxWidth: '800px', marginTop: '80px', zIndex: 1, position: 'relative' }}>
       <h1 style={{ fontSize: '6rem', lineHeight: '1', marginBottom: '20px', fontStyle: 'italic', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '-2px' }}>
-        LİMİTLERİ <span className="text-gradient">AŞ</span><br/>
+        VÜCUDUNU <span className="text-gradient">DEĞİŞTİR,</span><br/>
       </h1>
       <h1 style={{ fontSize: '4.5rem', lineHeight: '1', marginBottom: '30px', color: 'transparent', WebkitTextStroke: '1px rgba(255,255,255,0.5)', fontStyle: 'italic', fontWeight: 900, textTransform: 'uppercase' }}>
-        BAHANELERİ YOK ET
+        HAYATIN DEĞİŞSİN.
       </h1>
       <p style={{ fontSize: '1.2rem', marginBottom: '40px', color: '#ccc', lineHeight: '1.6', maxWidth: '600px' }}>
         Gerçek değişim burada başlar. Şehrin en iyi atmosferinde, profesyonel ekipmanlarla potansiyelini keşfet.
@@ -293,16 +293,7 @@ const About = () => (
         <p style={{ color: '#ccc', fontSize: '1.2rem', lineHeight: '1.8', marginBottom: '30px' }}>
           Burası sadece ter attığın bir yer değil; sınırlarınla yüzleştiğin bir mabet. "Hardest Worker in the Room" felsefesiyle, şehrin en agresif ve motive edici fitness kültürünü inşa ettik.
         </p>
-        <div style={{ display: 'flex', gap: '40px', marginTop: '40px', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '30px' }}>
-          <div>
-            <h3 style={{ fontSize: '3rem', color: 'var(--accent)', margin: '0 0 5px 0', lineHeight: '1' }}>2000+</h3>
-            <p style={{ color: 'var(--text-muted)', margin: 0, fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '2px' }}>Aktif Üye</p>
-          </div>
-          <div>
-            <h3 style={{ fontSize: '3rem', color: 'var(--accent)', margin: '0 0 5px 0', lineHeight: '1' }}>50+</h3>
-            <p style={{ color: 'var(--text-muted)', margin: 0, fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '2px' }}>Uzman Antrenör</p>
-          </div>
-        </div>
+
       </div>
       
       {/* Overlapping Image Collage */}
@@ -363,7 +354,7 @@ const Pricing = () => (
       <Reveal delay={100}>
         <GlowCard className="pricing-card">
           <h3 style={{ fontSize: '1.8rem', marginBottom: '15px' }}>STANDART</h3>
-          <div style={{ fontSize: '3rem', fontWeight: '900', color: 'var(--accent)', marginBottom: '20px' }}>1 AYLIK</div>
+          <div style={{ fontSize: '3rem', fontWeight: '900', color: 'var(--accent)', marginBottom: '20px' }}>3 AYLIK</div>
           <ul style={{ listStyle: 'none', padding: 0, marginBottom: '30px', color: '#ccc', lineHeight: '2.5' }}>
             <li>Sınırsız Salon Kullanımı</li>
             <li>Serbest Ağırlık Alanı</li>
@@ -378,7 +369,7 @@ const Pricing = () => (
         <GlowCard className="pricing-card popular">
           <div className="popular-tag">EN ÇOK TERCİH EDİLEN</div>
           <h3 style={{ fontSize: '1.8rem', marginBottom: '15px' }}>PRO</h3>
-          <div style={{ fontSize: '3rem', fontWeight: '900', color: 'var(--accent)', marginBottom: '20px' }}>3 AYLIK</div>
+          <div style={{ fontSize: '3rem', fontWeight: '900', color: 'var(--accent)', marginBottom: '20px' }}>6 AYLIK</div>
           <ul style={{ listStyle: 'none', padding: 0, marginBottom: '30px', color: '#fff', lineHeight: '2.5' }}>
             <li>Sınırsız Salon Kullanımı</li>
             <li>Tüm Grup Dersleri (Spinning vb.)</li>
@@ -392,7 +383,7 @@ const Pricing = () => (
       <Reveal delay={300}>
         <GlowCard className="pricing-card">
           <h3 style={{ fontSize: '1.8rem', marginBottom: '15px' }}>VIP</h3>
-          <div style={{ fontSize: '3rem', fontWeight: '900', color: 'var(--accent)', marginBottom: '20px' }}>YILLIK</div>
+          <div style={{ fontSize: '3rem', fontWeight: '900', color: 'var(--accent)', marginBottom: '20px' }}>1 YILLIK</div>
           <ul style={{ listStyle: 'none', padding: 0, marginBottom: '30px', color: '#ccc', lineHeight: '2.5' }}>
             <li>Sınırsız & VIP Kullanım</li>
             <li>Ücretsiz Kişisel Eğitmen (1 Seans)</li>
